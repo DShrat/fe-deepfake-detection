@@ -27,8 +27,10 @@ function About(){
                         <p>1. Website ini dibuat untuk mendeteksi sebuah gambar itu deepfake atau asli</p>
                         <p>2. Hanya dapat mendeteksi manusia</p>
                         <p>3. Hanya dapat menerima input JPG</p>
-                        <p>4. Tutup dan buka kembali tab untuk menghapus history</p>
-                        <p>5. History akan terhapus otomatis jika menutup tab</p>
+                        <p>4. Input harus berupa foto 1 wajah manusia</p>
+                        <p>5. Input foto wajah harus berukuran 1 layar penuh</p>
+                        <p>6. Tutup dan buka kembali tab untuk menghapus history</p>
+                        <p>7. History akan terhapus otomatis jika menutup tab</p>
                     </div>
                     <div className="isi terima kasih">
                         <h1>Source</h1>
