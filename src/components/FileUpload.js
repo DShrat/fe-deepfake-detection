@@ -57,7 +57,7 @@ function ImageUpload() {
       data.append('file', image);
 
       axios
-        .post("http://rbroqg-ip-103-134-154-192.tunnelmole.net/predict", data)
+        .post("https://00f0-103-134-154-192.ngrok-free.app/predict", data)
         .then((response) => {
           const result = response.data; 
           console.log(result);
