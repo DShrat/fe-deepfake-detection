@@ -57,14 +57,14 @@ function ImageUpload() {
       data.append('file', image);
 
       axios
-        .post("http://127.0.0.1:8000/predict", data)
+        .post("http://rbroqg-ip-103-134-154-192.tunnelmole.net/predict", data)
         .then((response) => {
           const result = response.data; 
           console.log(result);
           labelElement.innerHTML = `Hasil: ${JSON.stringify(result)}`;
           
           const reader = new FileReader();
-          if (result == "real" || result == "deepfake"){
+          if (result == "Gambar Asli" || result == "Gambar Deepfake"){
             reader.onload = function(e) {
             const existingData = JSON.parse(localStorage.getItem('imageLabelPairs')) || [];
             existingData.push({ image: e.target.result, label: result });
