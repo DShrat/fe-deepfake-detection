@@ -57,7 +57,8 @@ function ImageUpload() {
       data.append('file', image);
 
       axios
-        .post("https://00f0-103-134-154-192.ngrok-free.app/predict", data)
+        .post("https://2446-103-187-146-43.ngrok-free.app/predict", data)
+        // .post("http://127.0.0.1:8000/predict", data)
         .then((response) => {
           const result = response.data; 
           console.log(result);
